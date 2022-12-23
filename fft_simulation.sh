@@ -2,11 +2,13 @@
 
 addpath("lib");
 
-arg_list = argv ();
-
+% arguments buffer
 spectrums=[];
 sampling_rate=44100;
 duration_in_second=.5;
+
+% decoding input arguments
+arg_list = argv ();
 
 for i = 1:nargin
   switch (arg_list{i})
@@ -23,6 +25,7 @@ for i = 1:nargin
   endswitch
 endfor
 
+% running simulation
 compound = compound_signal(spectrums, sampling_rate, duration_in_second);
 compound.plot;
 
