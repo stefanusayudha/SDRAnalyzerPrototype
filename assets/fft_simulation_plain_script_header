@@ -1,0 +1,13 @@
+# Header Section
+#!/bin/bash
+
+if [[ $1 == "-h" ]];
+then
+  less assets/help.md
+  exit 0;
+fi
+
+c="./bin/application.sh $@"
+
+# run command
+bash -c "$c"
