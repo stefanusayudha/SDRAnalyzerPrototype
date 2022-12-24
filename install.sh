@@ -8,8 +8,6 @@ echo "" >> ./bin/fft_simulation.sh
 chmod +x ./bin/fft_simulation.sh
 
 ln -s ./bin/fft_simulation.sh ./fft_simulation.sh
-
-# create binnary folder
 ln -s lib bin/lib
 
 # generating application file
