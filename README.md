@@ -1,8 +1,10 @@
 ## Signal Analyzer
+Spectrum analyzer simulation using octave and FFT.
 
-To install this run ./install.sh
+## Instalation
+To install this run ```./install.sh.```
+The installer will atomatically detect Octave executable path. Any evirontment setup is nolonger necessary.
 
-In order to run this application, you will need octave installed.
-Installer will automatically detect octave binary executable path.
-
-After finish installing you can run fft_symulation.sh -h to display help.
+## Running
+In order to run this application, you will need Octave tobe installed.
+Once you finish run the installation, you will be able to execute the command ```fft_symulation.sh -h``` to display help.
