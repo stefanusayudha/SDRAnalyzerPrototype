@@ -3,7 +3,7 @@
 
 if [[ $1 == "-h" ]];
 then
-  less assets/help.md
+  cat assets/help.md
   exit 0;
 fi
 
