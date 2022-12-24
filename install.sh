@@ -1,13 +1,15 @@
 #!/bin/bash
 
 # write fft_simulation.sh
-cat assets/fft_simulation_plain_script_header > fft_simulation.sh
-echo "" >> fft_simulation.sh
-chmod +x fft_simulation.sh
+mkdir bin
 
+cat assets/fft_simulation_plain_script_header > ./bin/fft_simulation.sh
+echo "" >> ./bin/fft_simulation.sh
+chmod +x ./bin/fft_simulation.sh
+
+ln -s ./bin/fft_simulation.sh ./fft_simulation.sh
 
 # create binnary folder
-mkdir bin
 ln -s lib bin/lib
 
 # generating application file
