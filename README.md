@@ -1,5 +1,6 @@
 ## Signal Analyzer
 Spectrum analyzer simulation using octave and FFT.
+![Alt text](./assets/img/img1.png?raw=true "Title")
 
 ## Instalation
 To install this run ```./install.sh.```
