@@ -4,7 +4,8 @@ addpath("lib");
 spectrums=[];
 sampling_rate=44100;
 duration_in_second=.5;
-
+pinch=-1;
+band_gap=-1;
 % decoding input arguments
 arg_list = argv ();
 
@@ -18,13 +19,18 @@ for i = 1:nargin
       endfor
     case "-d"
       duration_in_second = str2num(arg_list{i+1});
+    case "-p"
+      pinch = str2num(arg_list{i+1});
+    case "-b"
+      band_gap = str2num(arg_list{i+1});
     otherwise
       
   endswitch
 endfor
 
 % running simulation
-compound = compound_signal(spectrums, sampling_rate, duration_in_second);
+compound = compound_signal(spectrums, sampling_rate, 
+duration_in_second,pinch,band_gap);
 compound.plot;
 
 %exit
